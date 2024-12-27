@@ -1,6 +1,8 @@
-def read_input():
-    with open("day00/input.txt", "r") as f:
-        input = [l.strip() for l in f.readlines()]
+def read_input(input=None):
+    if not input:
+        with open("day00/input.txt", "r") as f:
+            input = f.read().strip()
+        input = [l.strip() for l in input.split("\n")]
     return input
 
 
@@ -13,6 +15,10 @@ def part2(input):
 
 
 def main():
+    test_input = """
+""".strip()
+
+    # input = read_input(test_input)
     input = read_input()
 
     ans1 = part1(input)
