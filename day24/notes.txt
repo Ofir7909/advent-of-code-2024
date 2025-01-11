@@ -1,0 +1,7 @@
+false positive:
+    sgv is c0
+    z45 created differently from all the other z bits because it's the last output bit
+
+qbw is used like XOR_IN15 OR c14, but created like XOR_IN14
+
+The rest i will find with sort of frequency analysis
